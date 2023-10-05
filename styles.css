@@ -8,6 +8,7 @@ body {
     margin-top: 0;
 }
 
+
 .footer {
     background-color: black;   
     padding: 8px  ;
@@ -19,6 +20,17 @@ body {
     height: auto;
     display: block;
     max-width: 300px;
+}
+
+.footer h3 , .footer p, .footer a ,.footer .fa {
+    color: whitesmoke;
+}
+.footer b {
+    font-size: 20px;
+}
+
+.footer p , .footer a , .footer .fa {
+    font-size: 12px;    
 }
 
 .topnav {
