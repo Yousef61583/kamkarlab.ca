@@ -4,35 +4,57 @@ body {
 
 .main {
     padding-top: 40px;
-    margin:8px;
-    margin-top: 0;
+    margin:0 8px 0 8px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .footer {
     background-color: black;   
-    padding: 8px  ;
-    padding-left: 3%;
+    padding: 0  ;
+    margin-top: auto;
 }
 
 .footer img {
-    width: 50%;
+    width: 100%;
     height: auto;
     display: block;
-    max-width: 300px;
+    align-items: center;
+    max-height: 80px;
 }
 
-.footer h3 , .footer p, .footer a ,.footer .fa {
-    color: whitesmoke;
-}
 .footer b {
     font-size: 20px;
 }
 
-.footer p , .footer a , .footer .fa {
-    font-size: 12px;    
+.footer p , .footer .fa {
+    font-size: 12px; 
+    color: whitesmoke;
 }
 
+.footer-content {
+    padding: 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footer-content ui {
+    max-width: 500;
+}
+
+.footer-content li {
+    padding: 0 5% 0 5%;
+    display: block;
+    max-width: 30%;   
+}
+
+
+/* nav bar */
 .topnav {
     width: 100%;
     background-color: #f2f2f2;
@@ -41,7 +63,6 @@ body {
     position: fixed;
 }
   
-/* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
@@ -52,13 +73,11 @@ body {
     font-size: 17px;
 }
  
-/* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
   
-/* Add an active class to highlight the current page */
 .topnav a.active {
     background-color: #d5ad56;
     color:whitesmoke;
@@ -71,13 +90,12 @@ body {
     font-size: 20;
 }
   
-/* Hide the link that should open and close the topnav on small screens */
+
 .topnav .icon {
     display: none;
 }
 
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 700px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -86,8 +104,7 @@ body {
     }
 }
   
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .topnav.responsive {position: fixed;}
     .topnav.responsive a.icon {
         position: absolute;
@@ -100,3 +117,17 @@ body {
         text-align: left;
     }
 }
+
+@media (max-width:700px) {
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .footer-content li {
+        margin-top: 10px;
+      margin-bottom: 10px;
+      max-width: 50%;
+    }
+    }
