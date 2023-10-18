@@ -1,61 +1,32 @@
 body {
-    width: 100%;
     margin: 0;
     max-width: 2500px;
+    height: 100vh;
+    align-items: center;
 }
 
 .main {
     width: 100%;
+    max-width: 1200px;
     padding-top: 40px;
-    margin:0 8px 0 8px;
-    min-height: 80vh;
+    margin:auto ;
     display: flex;
     flex-direction: column;
+    min-height: 75vh;
 }
 
-
-.footer {
-    width: 100%;
-    background-color: black;   
-    padding: 0  ;
-    margin-top: auto;
-}
-
-.footer img {
-    width: 100%;
-    height: auto;
-    display: block;
+.cover {
     align-items: center;
-    max-height: 80px;
+    margin: 5vh auto 10vh auto;
 }
 
-.footer b {
-    font-size: 20px;
+.cover img {
+    
+    max-height: 80vh;
+    width: auto;
+    max-width: 90vw;
 }
 
-.footer p , .footer .fa {
-    font-size: 12px; 
-    color: whitesmoke;
-}
-
-.footer-content {
-    padding: 0 ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    text-align: center;
-}
-
-.footer-content ui {
-    max-width: 500;
-}
-
-.footer-content li {
-    padding: 0 5% 0 5%;
-    display: block;
-    max-width: 30%;   
-}
 
 
 /* nav bar */
@@ -74,7 +45,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1rem;
 }
  
 .topnav a:hover {
@@ -91,7 +62,7 @@ body {
 
 .topnav a.title {
     background-color: #f2f2f2;
-    font-size: 20;
+    font-size: 1rem;
 }
   
 
@@ -114,12 +85,60 @@ body {
         position: absolute;
         right: 0;
         top: 0;
-}
+    }
 .topnav.responsive a {
         float: none;
         display: block;
         text-align: left;
     }
+}
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    background-color: black;   
+    padding: 0  ;
+    margin-top: auto;
+}
+
+.footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+    max-height: 80px;
+}
+
+.footer b {
+    font-size: 1.2rem;
+}
+
+.footer p , .footer .fa {
+    font-size: 0.7rem; 
+    color: whitesmoke;
+}
+
+.footer-content {
+    padding: 0 ;
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footer-content ui {
+    max-width: 500;
+}
+
+.footer-content li {
+    padding: 0 5% 0 5%;
+    display: block;
+    max-width: 30%;   
 }
 
 @media (max-width:700px) {
@@ -134,4 +153,4 @@ body {
       margin-bottom: 10px;
       max-width: 50%;
     }
-    }
+}
