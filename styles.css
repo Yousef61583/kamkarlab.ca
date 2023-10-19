@@ -28,9 +28,27 @@ body {
     padding: 0 5% 0 5%;
 }
 
+.main h3 {
+    font: 1.3rem sans-serif;
+    font-weight: bold;
+}
+
+.main h2 {
+    font: 1.7rem sans-serif;
+    font-weight: bolder;
+}
+
 @media screen and (max-width: 700px) {
     .main p {
         font-size: 1rem;
+    }
+    
+    .main h3 {
+        font-size: 1.15rem;
+    }
+
+    .main h2 {
+        font-size: 1.5rem;
     }
     
 }
@@ -38,6 +56,14 @@ body {
 @media screen and (max-width: 500px) {
     .main p {
         font-size: 0.8rem;
+    }
+
+    .main h3 {
+        font-size: 1rem;
+    }
+
+    .main h2 {
+        font-size: 1.2rem;
     }
     
 }
@@ -50,6 +76,7 @@ body {
     flex-direction: row;
     text-align: left;
     margin: 2% auto;
+    margin-left: 2%;
 }
 
 .reversed {
@@ -60,9 +87,11 @@ body {
     margin-right: 0;
 }
 
+
+
 .scholar-information {
     max-width: 40%;
-    margin: auto 5%; 
+    margin: auto 5%;
 }
 
 
