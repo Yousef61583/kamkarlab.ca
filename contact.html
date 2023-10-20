@@ -20,6 +20,22 @@
             }
         }
     </script>
+        
+        <script>
+            function displayFunction() {
+                var topItem = document.getElementById("top-item");
+                var bottomItem = document.getElementById("bottom-item");
+                if (window.innerWidth <= 1000){
+                    bottomItem.className = "visible" ;
+                    topItem.className =  "hidden" ;
+                } else {
+                    bottomItem.className = "hidden" ;
+                    topItem.className =  "visible" ;
+                }
+            }
+            window.onload = displayFunction;
+            window.onresize = displayFunction;
+        </script>
 </head>
 
 <body>
@@ -41,17 +57,26 @@
         <div class="box">
             <div class="content">
                 <img src="images/people/milad-kamkar.jpg" alt="Kamkar image">
-               
+                <div class="hidden" id="bottom-item">
+                    <h2>Milad Kamkar, PhD</h2>
+                    <p>
+                    Chemical Engineering<br>
+                    Waterloo Institute for Nanotechnology<br>
+                    E6 3010, 200 University AVE. W., Waterloo, ON, Canada N2L 3G1<br>
+                    <a href="mailto:Milad.kamkar@uwaterloo.ca">Milad.kamkar@uwaterloo.ca</a><br>
+                    </p>
+                </div>
             </div>
             <div class="content">
-                <h2>Milad Kamkar, PhD</h2>
-                <p>
-                Chemical Engineering<br>
-                Waterloo Institute for Nanotechnology<br>
-                E6 3010, 200 University AVE. W., Waterloo, ON, Canada N2L 3G1<br>
-                <a href="mailto:Milad.kamkar@uwaterloo.ca">Milad.kamkar@uwaterloo.ca</a><br>
-                </p>
-            
+                <div class="visible" id="top-item">
+                    <h2>Milad Kamkar, PhD</h2>
+                    <p>
+                    Chemical Engineering<br>
+                    Waterloo Institute for Nanotechnology<br>
+                    E6 3010, 200 University AVE. W., Waterloo, ON, Canada N2L 3G1<br>
+                    <a href="mailto:Milad.kamkar@uwaterloo.ca">Milad.kamkar@uwaterloo.ca</a><br>
+                    </p>
+                </div>
                 <h2>Selected Awards and Honours</h2>
                 <p>2023 Polymer Processing Early Career Award</p>
                 <p>2022 Polymer Processing Society Young Researcher Award</p>
